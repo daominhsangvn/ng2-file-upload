@@ -21,7 +21,7 @@
     "test": "ng test -sr",
     "test-coverage": "ng test -sr -cc",
     "version": "npm run flow.changelog && git add -A",
-    "build:aot": "rimraf build && ngc -p src/tsconfig-aot.json"
+    "build:aot": "rimraf dist && ngc -p src/tsconfig-aot.json"
   },
   "main": "build/index.js",
   "module": "index.js",
