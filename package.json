@@ -20,9 +20,10 @@
     "pretest": "run-s lint build link",
     "test": "ng test -sr",
     "test-coverage": "ng test -sr -cc",
-    "version": "npm run flow.changelog && git add -A"
+    "version": "npm run flow.changelog && git add -A",
+    "build:aot": "rimraf build && ngc -p src/tsconfig-aot.json"
   },
-  "main": "bundles/ng2-file-upload.umd.js",
+  "main": "build/index.js",
   "module": "index.js",
   "typings": "index.d.ts",
   "keywords": [
