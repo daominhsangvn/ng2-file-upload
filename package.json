@@ -23,7 +23,7 @@
     "version": "npm run flow.changelog && git add -A",
     "build:aot": "rimraf dist && ngc -p src/tsconfig-aot.json"
   },
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "module": "index.js",
   "typings": "index.d.ts",
   "keywords": [
